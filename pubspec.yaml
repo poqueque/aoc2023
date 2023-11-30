@@ -1,0 +1,12 @@
+name: aoc2023
+description: Advent of Code 2023 in Dart
+version: 1.0.0
+repository: https://github.com/poqueque/aoc2023
+
+environment:
+  sdk: ^3.2.1
+
+dependencies:
+  http: ^0.13.5
+  collection: any
+  lints: ^3.0.0
