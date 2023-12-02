@@ -4,7 +4,7 @@ import '../main.dart';
 
 class Day01 extends Day {
   @override
-  bool get completed => false;
+  bool get completed => true;
 
   @override
   part1() {

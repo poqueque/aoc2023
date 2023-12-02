@@ -3,3 +3,7 @@
 .dart_tool/
 
 lib/.DS_Store
+
+lib/leaderboard.dart
+
+_leaderboard_2023.txt
