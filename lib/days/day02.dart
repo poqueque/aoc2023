@@ -2,7 +2,7 @@ import '../main.dart';
 
 class Day02 extends Day {
   @override
-  bool get completed => false;
+  bool get completed => true;
 
   @override
   part1() {
