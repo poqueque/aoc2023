@@ -5,7 +5,7 @@ import '../utils/coor.dart';
 
 class Day03 extends Day {
   @override
-  bool get completed => false;
+  bool get completed => true;
 
   List<int> numbers = [];
   List<List<Coor>> positions = [];
