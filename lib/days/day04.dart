@@ -2,7 +2,7 @@ import '../main.dart';
 
 class Day04 extends Day {
   @override
-  bool get completed => false;
+  bool get completed => true;
 
   var winingList = [];
   var ownedList = [];
