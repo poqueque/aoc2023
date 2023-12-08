@@ -2,7 +2,7 @@ import '../main.dart';
 
 class Day06 extends Day {
   @override
-  bool get completed => false;
+  bool get completed => true;
   List<int> times = [];
   List<int> distances = [];
 
