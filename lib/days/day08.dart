@@ -2,7 +2,7 @@ import '../main.dart';
 
 class Day08 extends Day {
   @override
-  bool get completed => false;
+  bool get completed => true;
 
   String instructions = "";
   Map<String, (String, String)> moves = {};
