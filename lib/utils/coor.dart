@@ -176,6 +176,8 @@ class Coor {
 class CoorMap<T> {
   Map<Coor, T> map = {};
 
+  CoorMap(this.map);
+
   int bounds(Direction direction) {
     var minX = 100000;
     var maxX = -100000;
