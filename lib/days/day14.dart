@@ -25,7 +25,6 @@ class Day14 extends Day {
 
   @override
   part1() {
-    CoorMap coorMap = CoorMap(grid);
     tilt(Direction.up);
     print('');
     return weight();

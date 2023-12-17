@@ -114,7 +114,6 @@ class Day10 extends Day {
       }
     }
     var inner = 0;
-    bool out = true;
     for (var i = 0; i < coorMap.bounds(Direction.down); i++) {
       String? last = "";
       for (var j = 0; j < coorMap.bounds(Direction.right); j++) {

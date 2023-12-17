@@ -1,6 +1,57 @@
 import 'dart:math';
 
-enum Direction { left, right, up, down, leftDown, leftUp, rightDown, rightUp }
+enum Direction {
+  left,
+  right,
+  up,
+  down,
+  leftDown,
+  leftUp,
+  rightDown,
+  rightUp;
+
+  Direction toLeft() {
+    switch (this) {
+      case Direction.up:
+        return Direction.left;
+      case Direction.down:
+        return Direction.right;
+      case Direction.left:
+        return Direction.down;
+      case Direction.right:
+        return Direction.up;
+      case Direction.leftUp:
+        return Direction.leftDown;
+      case Direction.rightUp:
+        return Direction.rightDown;
+      case Direction.leftDown:
+        return Direction.leftUp;
+      case Direction.rightDown:
+        return Direction.rightUp;
+    }
+  }
+
+  Direction toRight() {
+    switch (this) {
+      case Direction.up:
+        return Direction.right;
+      case Direction.down:
+        return Direction.left;
+      case Direction.left:
+        return Direction.up;
+      case Direction.right:
+        return Direction.down;
+      case Direction.leftUp:
+        return Direction.rightUp;
+      case Direction.rightUp:
+        return Direction.leftDown;
+      case Direction.leftDown:
+        return Direction.rightDown;
+      case Direction.rightDown:
+        return Direction.leftUp;
+    }
+  }
+}
 
 class Coor {
   late int x;
@@ -170,6 +221,26 @@ class Coor {
       }
     }
     return list;
+  }
+
+  Direction directionTo(Coor cursor) {
+    if (cursor.x == x) {
+      if (cursor.y < y) return Direction.up;
+      if (cursor.y > y) return Direction.down;
+    }
+    if (cursor.y == y) {
+      if (cursor.x < x) return Direction.left;
+      if (cursor.x > x) return Direction.right;
+    }
+    if (cursor.x < x) {
+      if (cursor.y < y) return Direction.leftUp;
+      if (cursor.y > y) return Direction.leftDown;
+    }
+    if (cursor.x > x) {
+      if (cursor.y < y) return Direction.rightUp;
+      if (cursor.y > y) return Direction.rightDown;
+    }
+    return Direction.up;
   }
 }
 
