@@ -2,7 +2,7 @@ import '../main.dart';
 
 class Day15 extends Day {
   @override
-  bool get completed => false;
+  bool get completed => true;
 
   List<String> data = [];
 
