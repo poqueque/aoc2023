@@ -5,7 +5,7 @@ import '../utils/coor.dart';
 
 class Day18 extends Day {
   @override
-  bool get completed => false;
+  bool get completed => true;
 
   List<Coor> vertices = [];
 
@@ -75,6 +75,6 @@ class Day18 extends Day {
       sum += (v1.x * v2.y) - (v1.y * v2.x);
     }
 
-    return sum ~/ 2 + border ~/ 2 + 1;
+    return sum ~/ 2 + border / 2 + 1;
   }
 }
