@@ -2,7 +2,7 @@ import '../main.dart';
 
 class Day19 extends Day {
   @override
-  bool get completed => false;
+  bool get completed => true;
 
   Map<String, WorkFlow> workflows = {};
   List<Part> parts = [];
