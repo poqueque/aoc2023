@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:aoc2023/extensions/extensions.dart';
+
 import 'days/day01.dart';
 import 'days/day02.dart';
 import 'days/day03.dart';
@@ -50,8 +52,9 @@ abstract class Day {
         if (T is int) {
           grid[Coor(i, j)] = int.parse(line[i]) as T;
         } else if (T is String) {
-          grid[Coor(i, j)] = line[i] as T;
+          grid[Coor(i, j)] = line.chars[i] as T;
         } else {
+          print(T.runtimeType.toString());
           throw Exception("Type not supported");
         }
       }
