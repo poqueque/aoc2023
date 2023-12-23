@@ -3,9 +3,9 @@ import 'dart:math';
 enum Direction { left, right, up, down, front, back }
 
 class Coor3 {
-  late final int x;
-  late final int y;
-  late final int z;
+  late int x;
+  late int y;
+  late int z;
 
   Coor3(this.x, this.y, this.z);
 
