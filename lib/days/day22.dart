@@ -5,7 +5,7 @@ import '../utils/coor3.dart';
 
 class Day22 extends Day {
   @override
-  bool get completed => false;
+  bool get completed => true;
 
   List<List<Coor3>> bricks = [];
 
