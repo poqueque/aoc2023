@@ -3,7 +3,7 @@ import '../utils/coor3.dart';
 
 class Day24 extends Day {
   @override
-  bool get completed => false;
+  bool get completed => true;
 
   List<(Coor3, Coor3)> stones = [];
 
